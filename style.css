@@ -1,0 +1,340 @@
+*{
+  margin:0;
+  padding:0;
+  -moz- transition : 300ms all ease-in-out; 
+}
+
+body {
+  background: url(image/bg.jpg) no-repeat fixed;
+  overflow:auto; 
+
+	}
+ 
+/*Font Size*/
+h1, h2, h3 {
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+
+p {
+  font-size: 1.0em;
+  line-height: 1.6;
+  color: #fff;
+}
+/*Selesei Font*/
+ 
+ /*Menu header*/
+ #navbar{
+  max-width:1600px;
+  height:100px;
+  background:#C4540C;
+  background: rgba(200,130,45,0.6);
+ }
+.brand {
+  display:inherit;
+  font-weight: 700;
+  font-size: 5em;
+  text-align: center;
+  padding: 30px 0px 10px;
+  color: #fff;
+}
+.address-brand {
+  display: inherit;
+  text-align: center;
+  padding: 0px 0px 40px;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  font-weight:50;
+  font-family:Lucida Calligraphy; 
+  color: #fff;
+}
+.address-brand-2{
+  display: inherit;
+  text-align: center;
+  font-size:1.20em;
+  font-weight:50;
+  letter-spacing:3px;
+  padding:0px 0px 10px;
+  color: #fff;
+  margin-top:-20px; 
+}
+
+/*responsive*/
+@media screen and (min-width:400px) and (min-height:610px) {
+ /*Menu */
+.menu { 
+  padding-top: 20px;
+  margin-left:300px;
+  list-style: none;
+  margin-top:5px; 
+  height:78px;
+  overflow:auto;  
+}
+.menu li {
+  float:left;
+  position:relative;
+  margin-right:5em;
+}
+.menu li img {
+    max-width:130px;
+    position:absolute;
+    right:-24px;
+    top: -30px;
+}
+.menu a {
+  display:block;
+  position: relative;
+  font-size: 20px; 
+  color:#fff; 
+  text-transform:uppercase;
+  padding:0 25px;
+  line-height:60px; 
+  text-decoration:none;
+  transition: 300ms all ease-in-out;
+}
+.menu a:hover {
+  background: #000 ;
+  transition: 300ms all ease-in-out;
+}
+
+
+
+/* content*/
+#content{
+  margin-top:20px;
+  margin-left:5%; 
+  max-width:1200px;
+  height:530px;
+  background:#C4540C;
+  background: rgba(255,255,255,0.9);
+  overflow:auto; 
+ }
+/*image index*/
+.image{
+  margin:2em 0 0 6.8em;
+  width:250px;
+  height:340px;
+  float: left;
+  background:#eee; 
+}
+.image img{
+    max-width:100%;
+    border-radius:180px;
+    z-index: 9999;
+    -o-transition : 300ms all ease-in-out; /*support ke opera mini*/
+    -moz-transition : 300ms all ease-in-out; /*support ke mozila */
+    -ms-transition : 300ms all ease-in-out; /*support ke IE */
+    transition : 300ms all ease-in-out; /*support ke*/
+}
+.image:hover img {
+  -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari , Chrome */
+     transform: rotate(20deg);
+    -o-transition : 300ms all ease-in-out; /*support ke opera mini*/
+    -moz-transition : 300ms all ease-in-out; /*support ke mozila */
+    -ms-transition : 300ms all ease-in-out; /*support ke IE */
+    transition : 300ms all ease-in-out;
+}
+.image h1{
+  color:#fff;
+}
+.image h2{
+  text-align: center;
+  color:#0078BB;
+  margin: 0 0 15px 0;
+}
+.image h2:hover{
+  color:#BB98FF;
+  cursor: pointer; 
+}
+.image p{
+  color: #000;
+  font-family:sans-serif; 
+  text-align:center;
+}
+.image a{
+  background: #f90;
+  padding: 5px;
+  text-decoration:  none;
+  color: #fff;
+  display: block;
+  margin: 0em 0;
+  text-align: center;
+  transition: 300ms all ease-in-out;
+}
+.image a:hover{
+  padding: 10px;
+  transition: 300ms all ease-in-out;
+}
+/*Selesei Image Index*/
+
+
+/*Profile*/
+.profil{
+  margin: 2em 0 0 7em;
+  width:250px;
+  height:250px;
+  margin-left:480px;  
+}
+.profil img{
+    max-width: 100%;
+    background:#eebb78; 
+    border-radius:80px;
+    z-index: 9999;
+    float:center;
+    -o-transition : 300ms all ease-in-out; /*support ke opera mini*/
+    -moz-transition : 300ms all ease-in-out; /*support ke */
+    -ms-transition : 300ms all ease-in-out; /*support ke*/
+    transition : 300ms all ease-in-out; /*support ke*/
+}
+.profil:hover img {
+    -ms-transform: scale(1,0); /* IE 9 */
+    -webkit-transform: scale(1,0); /* Safari */
+    transform: scale(1,0);
+
+    -o-transition : 300ms all ease-in-out;
+    -moz-transition : 300ms all ease-in-out;
+    -ms-transition : 300ms all ease-in-out;
+    transition : 300ms all ease-in-out;
+}
+.profil p{
+  color: #000;
+  font-family:sans-serif; 
+  text-align:center;
+}
+.medsos{
+  float: left;
+  max-width:500px;
+  margin: 0 0 0 55px;
+}
+.medsos img{
+  width: 40px;
+}
+.medsos h3{
+    font-size:15px; 
+    color: #000;
+    font-family: fantasy;
+    float: right;
+    margin: 5px 0 0 10px;
+}
+/*Selesei Profil*/
+
+
+/*Our Product*/
+#content-product{
+  margin-top:20px;
+  margin-left:5%; 
+  max-width:1200px;
+  height:1600px;
+  background:#C4540C;
+  background: rgba(255,255,255,0.9);
+  overflow:auto; 
+ }
+.product{
+  margin:2em 0 0 6.8em;
+  width:250px;
+  height:340px;
+  float: left;
+  background:#eee; 
+}
+.product img{
+    max-width:100%;
+    border-radius:50px;
+    z-index: 9999;
+}
+.product h1{
+  color:#fff;
+  text-align:center;
+}
+.product h2{
+  text-align: center;
+  color:#89bb89;
+  margin: 0 0 15px 0;
+}
+.product h2:hover{
+  color:#0078BB;
+  cursor: pointer; 
+}
+.product p{
+  color: #000;
+  font-family:monospace; 
+  text-align:center;
+}
+.product a{
+  background: #f90;
+  padding: 10px;
+  text-decoration:none;
+  color: #fff;
+  display:block;
+  margin:auto;
+  text-align: center;
+  transition: 300ms all ease-in-out;
+}
+.product a:hover{
+  padding: 10px;
+  background-color:brown;  
+  transition: 300ms all ease-in-out;
+}
+/*Selesei Our Product*/
+
+
+/*Form Contact*/
+.form {
+    margin-left:10px; 
+    margin-top:-8px;
+    background-color:#eeeeee;
+    padding:30px; 
+    width:40%;
+    height:85%;
+    float:left;     
+}
+ input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:border-box;
+}
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/*selesei form*/
+
+
+/*Map*/
+.map{
+  max-width: 600px;
+  float: left;
+  margin: 0 0 0 30px;
+}
+.map img{
+  width: 100%;
+  height:100%;
+}
+/*Map*/
+
+/* Footer*/
+#footer {
+  margin-top:20px;
+  max-width:1600px;
+  height:100px;
+  background:#C4540C;
+  background: rgba(200,130,65,0.8);
+  text-align: center;
+  padding-top:30px; 
+ }  
+
+#footer h3{
+  color:#fff;
+}
+
